@@ -31,10 +31,8 @@ class ProgressBarView extends StatelessWidget {
       onTap: () {
         if (progressBarController.progressBarListviewIndex.value ==
             progressBarController.progressBarItems.length) {
-          // Handle completion
         }
 
-        progressBarController.nextItemText();
         progressBarController.markAsRead(
             progressBarController.progressBarListviewIndex.value);
         if (progressBarController.progressBarListviewIndex.value >= 4) {
